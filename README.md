@@ -17,9 +17,11 @@
 > **Universal Agent Skill**: Designed for **OpenClaw**, but 100% compatible with **OpenCode**, **Claude Code**, or any local agent runtime that supports Python tool execution.
 
 ### Why?
-As a CS student (at VT 🦃), I was tired of checking **Canvas, Gmail, and Google Calendar** separately every single morning. I missed assignments, forgot about club meetings, and let important internship emails get buried in spam.
+Are you still afraid of missing assignments? Afraid of due dates without prior preparation? Afraid of missing important emails? Afraid of forgetting important events in your calendar?
 
-So I built this **OpenClaw Skill**. It acts as a backend service for your AI agent, giving it real-time access to your academic life. It doesn't just "show" data; it **understands** your schedule.
+Do you spend every morning switching between Canvas, Gmail, and Google Calendar? This is not only inefficient, but also makes it easy to miss assignment deadlines or important interview emails due to missed messages.
+
+This **OpenClaw skill plugin** is more than just a simple web crawler; it's your **AI academic assistant**. It aggregates information scattered across various platforms into a **daily morning report**, which you can feed directly to the AI, letting it tell you what to do today.
 
 ### ✨ Features
 *   **📚 Canvas Integration**:
@@ -77,9 +79,11 @@ Just ask your agent:
 > **通用 Agent 技能**: 本项目专为 **OpenClaw** 设计，但同样完美兼容 **OpenCode**, **Claude Code**, 以及任何支持运行 Python 工具的桌面端 AI Agent。
 
 ### 初衷
-作为一名留学生（坐标 VT 🦃），我受够了每天早上要在 Canvas、Gmail 和 Google Calendar 之间来回切换。不仅效率低，还容易因为漏看消息而错过作业 Due 或者重要的面试邮件。
+你还害怕作业漏写？害怕due来了但是没有提前准备？害怕错过重要邮件？害怕忘记日历中的重要事件？
 
-于是我开发了这个 **OpenClaw 技能插件**。它不仅是一个简单的爬虫，更是你的 **AI 学术管家**。它能把分散在各个平台的信息汇总成一份 **“每日早报”**，直接喂给 AI，让 AI 告诉你今天该干嘛。
+每天早上要在 Canvas、Gmail 和 Google Calendar 之间来回切换。不仅效率低，还容易因为漏看消息而错过作业 Due 或者重要的面试邮件。
+
+这个 **OpenClaw 技能插件**。它不仅是一个简单的爬虫，更是你的 **AI 学术管家**。它能把分散在各个平台的信息汇总成一份 **“每日早报”**，直接喂给 AI，让 AI 告诉你今天该干嘛。
 
 ### ✨ 核心功能
 *   **📚 Canvas 作业同步**:
