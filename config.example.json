@@ -1,0 +1,9 @@
+{
+  "canvas_token": "YOUR_CANVAS_TOKEN_HERE",
+  "gmail_user": "your.email@gmail.com",
+  "gmail_token": "YOUR_GMAIL_APP_PASSWORD",
+  "calendar_urls": [
+    "https://example.com/calendar1.ics",
+    "https://example.com/calendar2.ics"
+  ]
+}

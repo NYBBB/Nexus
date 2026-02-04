@@ -1,0 +1,22 @@
+# Config & Secrets (Never commit these!)
+config.json
+*.token
+*.key
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log
