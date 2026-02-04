@@ -13,19 +13,19 @@
 
 ## Tools
 
-### `student_status`
+### `nexus_status`
 检查当前助手的配置状态，查看缺少哪些 Token 或 Key。
 - **Use when**: 初次运行或需要确认服务是否连接正常时。
 - **Parameters**: None
 
-### `student_config`
+### `nexus_config`
 设置或更新配置项。
 - **Use when**: 用户提供 Token 或 URL 时。
 - **Parameters**:
     - `key`: 配置项名称 (canvas_token | gmail_token | calendar_urls)
     - `value`: 配置项的值 (calendar_urls 可以是逗号分隔的字符串)
 
-### `student_report`
+### `nexus_report`
 获取今日/明日的综合早报数据，包括作业 Due、日程安排和重要邮件。
 - **Use when**: 用户询问“今天有什么课”、“有什么作业”或请求发送早报时。
 - **Parameters**: None
@@ -35,7 +35,7 @@
 
 ## 🧠 Workflows & Guidelines (For Agents)
 
-当处理 `student_report` 返回的数据时，请严格遵守以下规则：
+当处理 `nexus_report` 返回的数据时，请严格遵守以下规则：
 
 ### 1. 优先级判断 (Priority Rules)
 你必须先对信息进行分级，不要罗列流水账：
@@ -103,7 +103,7 @@ def _load_config():
     except:
         return {}
 
-async def student_status(params):
+async def nexus_status(params):
     """Check configuration status."""
     result = subprocess.run(
         [sys.executable, CONFIG_UTILS, "status"],
@@ -111,7 +111,7 @@ async def student_status(params):
     )
     return result.stdout
 
-async def student_config(params):
+async def nexus_config(params):
     """Update configuration."""
     key = params.get("key")
     value = params.get("value")
@@ -122,7 +122,7 @@ async def student_config(params):
     )
     return result.stdout
 
-async def student_report(params):
+async def nexus_report(params):
     """Generate the full briefing report."""
     config = _load_config()
     report = []

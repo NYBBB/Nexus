@@ -147,7 +147,7 @@ def expand_recurring(event, start_range, end_range):
 def main():
     cals = get_config_calendars()
     if not cals:
-        print("No calendars configured. Use student_config to add calendar_urls.")
+        print("No calendars configured. Use nexus_config to add calendar_urls.")
         return
     
     now = datetime.now(LOCAL_TZ)

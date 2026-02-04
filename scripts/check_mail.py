@@ -35,10 +35,10 @@ def get_email_summary(password=None, user=None):
             user = cfg.get("gmail_user") # Must be set in config
             
     if not password:
-        return "Error: No Gmail App Password provided in config (gmail_token). Please run student_config key=gmail_token value=..."
+        return "Error: No Gmail App Password provided in config (gmail_token). Please run nexus_config key=gmail_token value=..."
     
     if not user:
-         return "Error: No Gmail User provided in config (gmail_user). Please run student_config key=gmail_user value=..."
+         return "Error: No Gmail User provided in config (gmail_user). Please run nexus_config key=gmail_user value=..."
 
     try:
         # Connect to Gmail
